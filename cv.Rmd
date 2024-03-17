@@ -9,7 +9,7 @@ email: "kazuharu.yanagimoto@cemfi.edu.es"
 github: kazuyanagimoto
 twitter: kazuyanagimoto
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: 516db0
+headcolor: 309374
 docname: CV
 output: vitae::awesomecv
 ---
