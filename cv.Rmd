@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = FALSE,
 library(vitae)
 library(tidyverse)
 library(googlesheets4)
-ss <- gs4_get(gs4_find("cv_yanagimoto"))
+ss <- gs4_get(gs4_find("cv_elisa"))
 ```
 
 
