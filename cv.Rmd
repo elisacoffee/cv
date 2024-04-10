@@ -1,13 +1,13 @@
 ---
-name: Kazuharu
-surname: Yanagimoto
-position: "Ph.D. Candidate in Economics. Labor, Macro, and Family Economics."
-address: "CEMFI, Calle Casado del Alisal 5, 28014 Madrid, Spain"
-orcid: "0009-0007-1967-8304"
-www: "kazuyanagimoto.com"
-email: "kazuharu.yanagimoto@cemfi.edu.es"
-github: kazuyanagimoto
-twitter: kazuyanagimoto
+name: Elizaveta
+surname: Kugaevskaia
+position: "PhD Candidate in International Public Policy. Political Economy."
+address: "1-31 Machikaneyamacho, Toyonaka, Osaka, 560-0043, Japan"
+orcid: "0009-0009-3584-598X"
+www: "elisacoffee.github.io"
+email: "kugaevskaya.elizaveta@gmail.com"
+github: elisacoffee
+twitter: elisainkyoto
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 309374
 docname: CV
@@ -90,7 +90,7 @@ read_sheet(ss, sheet = "teaching") |>
     with = title,
     what = institution,
     why = detail,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    when = glue::glue("{semester} {year}",.na = ""),
     where = location
   )
 ```
