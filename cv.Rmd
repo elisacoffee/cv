@@ -143,9 +143,10 @@ read.csv(here("data", "other.csv")) |>
 read.csv(here("data", "funding.csv")) |>
   detailed_entries(
     with = organization,
+    what = id,
     why = details,
     when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
-    where = id
+    where = amount
   )
 ```
 
