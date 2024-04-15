@@ -104,7 +104,7 @@ read.csv(here("data", "teaching.csv")) |>
     with = title,
     what = institution,
     why = details,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    when = glue::glue("{semester} {year}, {language} {level}}",.na = ""),
     where = location
   )
 ```
