@@ -1,4 +1,13 @@
-title,institution,startMonth,startYear,endMonth,endYear,location,detail
-Teaching Assistant in Time-series Econometrics,CEMFI,January,2024,March,2024,"Madrid, Spain",
-Teaching Assistant in International Economics,CEMFI,January,2023,March,2023,"Madrid, Spain",
-Teaching Assistant in Mathematics,CEMFI,September,2021,December,2021,"Madrid, Spain",
+title,position,institution,semester,year,location,language,level,detail
+Advanced Econometric Methods,Teaching Fellow for Takafumi Kawakubo,Osaka University,Fall-Winter,2024,"Osaka, Japan",English,grad,
+R/Stata Supplementary Class,Teaching Assistant,Osaka University,Summer,2024,"Osaka, Japan",English&Japanese,grad,
+Introduction to Statistics for Social Sciences,Teaching Fellow for Miki Kohara,Osaka University,Spring-Summer,2024,"Osaka, Japan",Japanese,undergrad,
+Nudge and Public Policy,Teaching Assistant for Nobuyuki Hanaki,Osaka University,Spring,2024,"Osaka, Japan",Japanese,undergrad&grad,
+Interpreting Economic Phenomena,Student Assistant for Mirka Zvedelikova,Osaka University,Fall-Winter,2023,"Osaka, Japan",Japanese,undergrad,
+Introduction to Statistics for Social Sciences,Teaching Assistant for Miki Kohara,Osaka University,Fall-Winter,2023,"Osaka, Japan",Japanese,undergrad,
+Advanced Econometric Methods,Teaching Fellow for Hirokazu Ishise,Osaka University,Fall-Winter,2023,"Osaka, Japan",English,grad,
+Nudge and Public Policy,Teaching Assistant for Nobuyuki Hanaki,Osaka University,Fall,2023,"Osaka, Japan",Japanese,undergrad&grad,
+RA Boot Camp,Mentor,Tokyo University (sponsor),Summer,2023,"Kanagawa, Japan",Japanese,undergrad&grad,
+R/Stata Supplementary Class,Teaching Assistant,Osaka University,Summer,2023,"Osaka, Japan",English&Japanese,grad,
+Advanced Econometric Methods,Teaching Fellow for Hidenori Takahashi,Osaka University,Fall-Winter,2022,"Osaka, Japan",English,grad,
+Data Management and Analysis,Teaching Assistant for Takuma Kamada,Osaka University,Fall,2021,"Osaka, Japan",English,undergrad&grad,
