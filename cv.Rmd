@@ -32,7 +32,7 @@ read.csv(here("data", "education.csv")) |>
   detailed_entries(
     with = degree,
     what = institution,
-    why = detail,
+    why = details,
     when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
     where = location
   )
@@ -52,7 +52,7 @@ research |>
   detailed_entries(
     with = title,
     what = coauthors,
-    why = detail,
+    why = details,
     where = date
   )
 ```
@@ -65,18 +65,18 @@ research |>
   detailed_entries(
     with = title,
     what = coauthors,
-    why = detail
+    why = details
   )
 ```
 
 ## Conference and Seminar Presentations
 
 ```{r}
-read.csv(here("data", "conference.csv")) |>
+read.csv(here("data", "presentations.csv")) |>
   detailed_entries(
     with = title,
-    why = detail,
-    when = glue::glue("{month} {year}",.na = ""),
+    why = details,
+    when = glue::glue("{year}",.na = ""),
     where = location
   )
 ```
@@ -86,11 +86,11 @@ read.csv(here("data", "conference.csv")) |>
 ## Research
 
 ```{r EMPLOYMENT}
-read.csv(here("data", "job.csv")) |>
+read.csv(here("data", "work.csv")) |>
   detailed_entries(
     with = title,
     what = institution,
-    why = detail,
+    why = details,
     when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
     where = location
   )
@@ -103,21 +103,44 @@ read.csv(here("data", "teaching.csv")) |>
   detailed_entries(
     with = title,
     what = institution,
-    why = detail,
+    why = details,
     when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
     where = location
   )
 ```
 
+# Research Funding
 
-# Scholarships
+```{r}
+read.csv(here("data", "funding.csv")) |>
+  detailed_entries(
+    with = organization,
+    why = details,
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    where = location
+  )
+```
+
+# Scholarships and Fellowships
+
+```{r}
+read.csv(here("data", "scholarships.csv")) |>
+  detailed_entries(
+    with = name,
+    why = details,
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    where = location
+  )
+```
+
+# Honors and Awards
 
 ```{r HONORS}
-read.csv(here("data", "honor.csv")) |>
+read.csv(here("data", "honors.csv")) |>
   detailed_entries(
     with = accomplishment,
-    why = detail,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    why = details,
+    when = glue::glue("{month} {year}",.na = ""),
     where = location
   )
 ```
@@ -127,7 +150,7 @@ read.csv(here("data", "honor.csv")) |>
 # Skills
 
 ```{r SKILLS}
-read.csv(here("data", "skill.csv")) |>
+read.csv(here("data", "skills.csv")) |>
   detailed_entries(
     with = area,
     what = skills
