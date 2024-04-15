@@ -1,7 +1,7 @@
 ---
 name: Elizaveta
 surname: Kugaevskaia
-position: "Ph.D. Candidate in International Public Policy"
+position: "Ph.D. Candidate in International Public Policy. JSPS Research Fellow DC2."
 address: "1-31 Machikaneyamacho, Toyonaka, Osaka, 560-0043, Japan"
 orcid: "0009-0009-3584-598X"
 www: "elisacoffee.github.io"
@@ -69,21 +69,37 @@ research |>
   )
 ```
 
-## Conference and Seminar Presentations
+# Presentations
 
 ```{r}
-read.csv(here("data", "presentations.csv")) |>
+presen <- read.csv(here("data", "presentations.csv"))
+```
+
+## Conferences
+```{r CONFERENCE}
+presen |>
+  filter(type == "conference") |>
   detailed_entries(
-    with = title,
+    with = name,
     why = details,
-    when = glue::glue("{year}",.na = ""),
+    when = year,
     where = location
   )
 ```
 
-# Research and Teaching Experience
+## Seminars
+```{r SEMINAR}
+presen |>
+  filter(type == "seminar") |>
+  detailed_entries(
+    with = name,
+    why = details,
+    when = year,
+    where = location
+  )
+```
 
-## Research
+# Research Experience
 
 ```{r EMPLOYMENT}
 read.csv(here("data", "work.csv")) |>
@@ -91,45 +107,56 @@ read.csv(here("data", "work.csv")) |>
     with = title,
     what = institution,
     why = details,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
-    where = location
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = "")
   )
 ```
 
-## Teaching
+# Teaching Experience
 
 ```{r TEACHING}
 read.csv(here("data", "teaching.csv")) |>
   detailed_entries(
-    with = title,
+    with = glue::glue("{title}, {position}",.na = ""),
+    what = glue::glue("{institution} ({level})",.na = ""),
+    why = details,
+    when = glue::glue("{semester} {year}",.na = ""),
+    where = language
+  )
+```
+
+# Other Experience
+
+```{r OTHER}
+read.csv(here("data", "other.csv")) |>
+  detailed_entries(
+    with = description,
     what = institution,
     why = details,
-    when = glue::glue("{semester} {year}, {language} {level}}",.na = ""),
-    where = location
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    where = language
   )
 ```
 
 # Research Funding
 
-```{r}
+```{r FUNDING}
 read.csv(here("data", "funding.csv")) |>
   detailed_entries(
     with = organization,
     why = details,
     when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
-    where = location
+    where = id
   )
 ```
 
 # Scholarships and Fellowships
 
-```{r}
+```{r SCHOLARSHIPS}
 read.csv(here("data", "scholarships.csv")) |>
   detailed_entries(
     with = name,
     why = details,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
-    where = location
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = "")
   )
 ```
 
@@ -138,10 +165,10 @@ read.csv(here("data", "scholarships.csv")) |>
 ```{r HONORS}
 read.csv(here("data", "honors.csv")) |>
   detailed_entries(
-    with = accomplishment,
+    with = name,
+    what = organization,
     why = details,
     when = glue::glue("{month} {year}",.na = ""),
-    where = location
   )
 ```
 

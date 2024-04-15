@@ -1,4 +1,4 @@
-type,name,month,year,location,details
-award,Research Activity Encouragement Award for OSIPP Graduate Students,Fall-Winter,2023,"Osaka, Japan",
-award,Research Activity Encouragement Award for OSIPP Graduate Students,Spring-Summer,2023,"Osaka, Japan",
-award,Research Activity Encouragement Award for OSIPP Graduate Students,Fall-Winter,2022,"Osaka, Japan",
+type,name,organization,month,year,location,details
+award,Research Activity Encouragement Award for OSIPP Graduate Students,Osaka University,Fall-Winter,2023,"Osaka, Japan",
+award,Research Activity Encouragement Award for OSIPP Graduate Students,Osaka University,Spring-Summer,2023,"Osaka, Japan",
+award,Research Activity Encouragement Award for OSIPP Graduate Students,Osaka University,Fall-Winter,2022,"Osaka, Japan",
