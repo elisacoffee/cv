@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE,
                       message = FALSE)
 
-pacman::p_load(vitae, here, tidyverse)
+pacman::p_load(vitae, here, tidyverse,zoo)
 ```
 
 
@@ -73,7 +73,9 @@ research |>
 
 ```{r}
 presen <- read.csv(here("data", "presentations.csv")) |>
-  arrange(desc(year))
+  mutate(date = paste0(month, ", ", year),
+         date = as.yearmon(date, format = "%B, %Y")) |>
+  arrange(desc(date))
 ```
 
 ## Conferences
@@ -83,7 +85,7 @@ presen |>
   detailed_entries(
     with = name,
     why = details,
-    when = year,
+    when = glue::glue("{month} {year}",.na = ""),
     where = location
   )
 ```
@@ -95,7 +97,7 @@ presen |>
   detailed_entries(
     with = name,
     why = details,
-    when = year,
+    when = glue::glue("{month} {year}",.na = ""),
     where = location
   )
 ```

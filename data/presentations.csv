@@ -1,5 +1,8 @@
-type,name,year,location,details
-seminar,OSIPP-Economics Lunchtime Seminar,2022,"Osaka, Japan",
-conference,Japanese Economic Association Spring Meeting,2023,"Nagoya, Japan",
-seminar,OSIPP-Economics Lunchtime Seminar,2024,"Osaka, Japan",
-conference,Japanese Economic Association Spring Meeting,2024,"Tokyo, Japan",
+type,name,month,year,location,details
+conference,Japanese Economic Association Spring Meeting,May,2023,"Nagoya, Japan",
+seminar,OSIPP-Economics Lunchtime Seminar,October,2022,"Osaka, Japan",
+seminar,OSIPP-Economics Lunchtime Seminar,May,2024,"Osaka, Japan",
+conference,Japanese Economic Association Spring Meeting,May,2024,"Tokyo, Japan",
+conference,Japanese Society for Quantitative Political Science Summer Meeting,July,2024,"Kochi, Japan",
+seminar,JADE x J-TREE Joint Workshop,August,2024,"Tokyo, Japan",
+seminar,Summer Workshop on Economic Theory,August,2024,"Otaru, Japan",
