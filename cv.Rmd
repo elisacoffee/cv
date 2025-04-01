@@ -1,13 +1,12 @@
 ---
 name: Elizaveta
-surname: Kugaevskaia
-position: "Ph.D. Candidate in International Public Policy. JSPS Research Fellow DC2."
-address: "1-31 Machikaneyamacho, Toyonaka, Osaka, 560-0043, Japan"
+surname: KUGAEVSKAIA
+position: "Assistant Professor"
+address: "1-6-1 Nishiwaseda, Shinjuku-ku, Tokyo, 169-8050, Japan"
 orcid: "0009-0009-3584-598X"
 www: "elisacoffee.github.io"
-email: "kugaevskaya.elizaveta@gmail.com"
+email: "eliza-k@aoni.waseda.jp"
 github: elisacoffee
-twitter: elisainkyoto
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 309374
 docname: CV
